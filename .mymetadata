@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="hdianc.restful"
+  id="myeclipse.1366094779081"
+  context-root="/oaServer"
+  j2ee-spec="6.0"
+  archive="hdianc.restful.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,24 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	
+	
+	<persistence-unit name="CrudableBaseJPA" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			 <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />  -->
+ 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/> 
+ 			<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.DB2Dialect"/>  -->
+ 			<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.DB2400Dialect"/> -->
+			<property name="hibernate.transaction.manager_lookup_class" value="com.atomikos.icatch.jta.hibernate3.TransactionManagerLookup" />
+			<property name="javax.persistence.validation.mode" value="callback, ddl" />
+		</properties>
+		<class>org.hy.fbi.expense.entity.UserInfomation</class>
+		<class>org.hy.fbi.expense.entity.UserInfo</class>
+		<class>org.hy.fbi.expense.entity.ServiceContract</class>
+		<class>org.hy.fbi.expense.entity.PgApplication</class>
+		<class>org.hy.fbi.expense.entity.BaseCode</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		
+	</persistence-unit>
+
+</persistence>

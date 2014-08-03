@@ -1,0 +1,843 @@
+2013-04-16 17:53:30,080 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 17:53:30,090 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 17:53:31,465 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 17:53:33,897 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 17:53:33,898 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 17:53:33,904 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 17:53:33,904 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:53:33,913 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 17:53:33,913 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:53:33,921 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 17:53:33,921 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 17:55:48,223 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 17:55:48,228 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 17:55:48,754 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 17:55:49,637 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 17:55:49,637 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 17:55:49,650 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 17:55:49,650 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:55:49,657 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 17:55:49,658 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:55:49,665 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 17:55:49,665 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 17:57:14,696 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 17:57:14,700 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 17:57:15,210 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 17:57:16,009 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 17:57:16,010 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 17:57:16,017 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 17:57:16,018 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:57:16,023 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 17:57:16,024 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:57:16,029 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 17:57:16,030 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 17:59:12,262 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 17:59:12,266 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 17:59:12,795 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 17:59:13,650 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 17:59:13,650 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 17:59:13,660 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 17:59:13,660 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:59:13,668 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 17:59:13,668 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 17:59:13,675 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 17:59:13,675 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 18:05:25,937 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 18:05:25,941 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 18:05:26,463 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 18:05:27,271 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 18:05:27,272 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 18:05:27,281 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 18:05:27,281 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:05:27,288 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 18:05:27,289 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:05:27,296 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 18:05:27,297 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 18:24:05,527 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 18:24:05,531 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 18:24:06,043 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 18:24:06,817 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 18:24:06,819 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 18:24:06,825 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 18:24:06,826 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:24:06,847 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 18:24:06,847 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:24:06,851 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 18:24:06,852 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 18:24:07,272 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-16 18:24:07,273 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-16 18:24:07,845 WARN [com.atomikos.jdbc.JdbcConnectionProxyHelper] - <Error delegating 'prepareStatement' call>
+java.sql.SQLException: [SQL0204] T_BORGANIZATION in DB2USER type *FILE not found. Cause . . . . . :   T_BORGANIZATION in DB2USER type *FILE was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, T_BORGANIZATION is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.
+	at com.ibm.as400.access.JDError.throwSQLException(JDError.java:643)
+	at com.ibm.as400.access.JDError.throwSQLException(JDError.java:614)
+	at com.ibm.as400.access.AS400JDBCStatement.commonPrepare(AS400JDBCStatement.java:1451)
+	at com.ibm.as400.access.AS400JDBCPreparedStatement.<init>(AS400JDBCPreparedStatement.java:185)
+	at com.ibm.as400.access.AS400JDBCConnection.prepareStatement(AS400JDBCConnection.java:1854)
+	at com.ibm.as400.access.AS400JDBCConnection.prepareStatement(AS400JDBCConnection.java:1677)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.atomikos.jdbc.nonxa.AtomikosThreadLocalConnection.invoke(AtomikosThreadLocalConnection.java:317)
+	at $Proxy30.prepareStatement(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler.continueInvocation(ConnectionProxyHandler.java:138)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
+	at $Proxy44.prepareStatement(Unknown Source)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:178)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:147)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1739)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:828)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2058)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:82)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:72)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3697)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:439)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:420)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:204)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:251)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:148)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:958)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:874)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:867)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.find(AbstractEntityManagerImpl.java:789)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.find(AbstractEntityManagerImpl.java:764)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:365)
+	at $Proxy32.find(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:240)
+	at $Proxy32.find(Unknown Source)
+	at org.hy.foundation.common.dao.jpa.CrudableDaoBase.getEntityByPrimarykey(CrudableDaoBase.java:45)
+	at org.hy.fbi.security.dao.impl.BOrganizationDao.getBOrganizationById(BOrganizationDao.java:18)
+	at mytest.main(mytest.java:21)
+2013-04-16 18:24:07,848 WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - <SQL Error: -204, SQLState: 42704>
+2013-04-16 18:24:07,849 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - <[SQL0204] T_BORGANIZATION in DB2USER type *FILE not found. Cause . . . . . :   T_BORGANIZATION in DB2USER type *FILE was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, T_BORGANIZATION is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 18:28:12,923 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 18:28:12,927 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 18:28:13,423 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 18:28:14,214 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 18:28:14,214 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 18:28:14,225 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 18:28:14,225 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:28:14,232 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 18:28:14,232 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:28:14,237 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 18:28:14,237 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 18:28:14,543 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-16 18:28:14,545 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-16 18:29:54,669 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-16 18:29:54,673 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-16 18:29:55,179 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-16 18:29:55,995 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-16 18:29:55,996 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-16 18:29:56,001 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-16 18:29:56,002 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:29:56,007 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-16 18:29:56,007 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-16 18:29:56,021 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-16 18:29:56,021 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-16 18:29:56,334 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-16 18:29:56,335 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 09:18:33,349 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 09:18:33,349 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 09:18:34,380 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 09:18:36,284 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table T_bOrganization (FID integer not null, fCreateDate varchar(255), fCreateName varchar(255), fDeptRespCode varchar(255), fEndDate varchar(255), fFatherID integer not null, fOrgCode varchar(255), fOrgDeptAttr varchar(255), fOrgName varchar(255), fOrgSeqID varchar(255), fOrgType varchar(255), fRemark varchar(255), fStartDate varchar(255), fStatus varchar(255), fUpdateDate varchar(255), fUpdateName varchar(255), primary key (FID))>
+2013-04-17 09:18:36,284 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0204] DB2USER in QSYS type *LIB not found. Cause . . . . . :   DB2USER in QSYS type *LIB was not found. If the member name is *ALL, the table is not partitioned. If this is an ALTER TABLE statement and the type is *N, a constraint or partition was not found. If this is not an ALTER TABLE statement and the type is *N, a function, procedure, trigger or sequence object was not found. If a function was not found, DB2USER is the service program that contains the function.  The function will not be found unless the external name and usage name match exactly.  Examine the job log for a message that gives more details on which function name is being searched for and the name that did not match. Recovery  . . . :   Change the name and try the request again.  If the object is a node group, ensure that the DB2 Multisystem product is installed on your system and create a nodegroup with the CRTNODGRP CL command. If an external function was not found, be sure that the case of the EXTERNAL NAME on the CREATE FUNCTION statement exactly matches the case of the name exported by the service program.>
+2013-04-17 09:18:36,300 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserAccount (id integer not null auto_increment, errLoginTimes integer, lastErrLoginTime integer, lastLoginTime integer, loginTimes integer, name varchar(255), password varchar(255), username varchar(255), userType_id integer, primary key (id))>
+2013-04-17 09:18:36,300 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-17 09:18:36,300 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: create table UserRole (id integer not null auto_increment, funcPrivilege varchar(255), name varchar(255), primary key (id))>
+2013-04-17 09:18:36,300 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0104] Token AUTO_INCREMENT was not valid. Valid tokens: AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE. Cause . . . . . :   A syntax error was detected at token AUTO_INCREMENT.  Token AUTO_INCREMENT is not a valid token.  A partial list of valid tokens is AS NO FOR NOT FILE WITH CCSID CHECK LOGGED UNIQUE.  This list assumes that the statement is correct up to the token.  The error may be earlier in the statement, but the syntax of the statement appears to be valid up to this point. Recovery  . . . :   Do one or more of the following and try the request again: -- Verify the SQL statement in the area of the token AUTO_INCREMENT. Correct the statement.  The error could be a missing comma or quotation mark, it could be a misspelled word, or it could be related to the order of clauses. -- If the error token is <END-OF-STATEMENT>, correct the SQL statement because it does not end with a valid clause.>
+2013-04-17 09:18:36,317 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000388: Unsuccessful: alter table UserAccount add index FKB3F13C2A65A8C67 (userType_id), add constraint FKB3F13C2A65A8C67 foreign key (userType_id) references UserRole (id)>
+2013-04-17 09:18:36,317 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <[SQL0199] Keyword INDEX not expected. Valid tokens: CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. Cause . . . . . :   The keyword INDEX was not expected here.  A syntax error was detected at keyword INDEX.  The partial list of valid tokens is CHECK UNIQUE FOREIGN PRIMARY CONSTRAINT. This list assumes that the statement is correct up to the unexpected keyword.  The error may be earlier in the statement but the syntax of the statement seems to be valid up to this point. Recovery  . . . :   Examine the SQL statement in the area of the specified keyword.  A colon or SQL delimiter may be missing. SQL requires reserved words to be delimited when they are used as a name. Correct the SQL statement and try the request again.>
+2013-04-17 09:18:36,738 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 09:18:36,738 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 10:27:46,135 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 10:27:46,151 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 10:27:46,772 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 10:27:47,209 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000319: Could not get database metadata>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:13)
+2013-04-17 10:27:47,209 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000299: Could not complete schema update>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:13)
+2013-04-17 10:27:47,569 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 10:27:47,569 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 10:27:47,975 WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - <SQL Error: 208, SQLState: S0002>
+2013-04-17 10:27:47,975 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - <对象名  'CDTFBITEST.T_bOrganization' 无效。>
+2013-04-17 10:28:20,925 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 10:28:20,925 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 10:28:21,222 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 10:28:21,659 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000319: Could not get database metadata>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:13)
+2013-04-17 10:28:21,659 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000299: Could not complete schema update>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:13)
+2013-04-17 10:28:22,033 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 10:28:22,033 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 10:35:15,539 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 10:35:15,539 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 10:35:15,868 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 10:35:16,304 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000319: Could not get database metadata>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:35:16,304 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000299: Could not complete schema update>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:35:16,663 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 10:35:16,663 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 10:35:42,283 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 10:35:42,299 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 10:35:42,751 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 10:35:43,501 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000319: Could not get database metadata>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:35:43,517 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000299: Could not complete schema update>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:35:43,845 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 10:35:43,861 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 10:43:15,502 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 10:43:15,506 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 10:43:15,825 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 10:43:16,267 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000319: Could not get database metadata>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:43:16,270 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000299: Could not complete schema update>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:43:16,641 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 10:43:16,642 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 10:44:24,105 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': no testQuery set - the connection pool will not be able to validate the connections!>
+2013-04-17 10:44:24,109 WARN [com.atomikos.jdbc.AbstractDataSourceBean] - <AtomikosNonXADataSourceBean 'db': poolSize equals default - this may cause performance problems!>
+2013-04-17 10:44:24,415 WARN [org.hibernate.service.jta.platform.internal.JtaPlatformInitiator] - <HHH000427: Using deprecated org.hibernate.transaction.TransactionManagerLookup strategy [hibernate.transaction.manager_lookup_class], use newer org.hibernate.service.jta.platform.spi.JtaPlatform strategy instead [hibernate.transaction.jta.platform]>
+2013-04-17 10:44:24,851 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000319: Could not get database metadata>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:44:24,854 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <HHH000299: Could not complete schema update>
+java.sql.SQLException: 对象名  'sysibm.syssequences' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2886)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2328)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:638)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:506)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeQuery(JtdsStatement.java:1433)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:149)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:70)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:63)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:196)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:447)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1726)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:76)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:907)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:887)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:98)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findNamedEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:510)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:492)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:656)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:629)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:156)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:94)
+	at mytest.main(mytest.java:14)
+2013-04-17 10:44:25,216 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <No properties path set - looking for transactions.properties in classpath...>
+2013-04-17 10:44:25,217 WARN [com.atomikos.icatch.config.UserTransactionServiceImp] - <Using init file: /E:/Workspaces/expense.restful/target/classes/transactions.properties>
+2013-04-17 14:50:46,881 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2e716cb7] to prepare test instance [test.DoDiBOrgRestEasyTests@18987a33]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [${dp_props_path}] cannot be opened because it does not exist
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:663)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:638)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:407)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+Caused by: java.io.FileNotFoundException: class path resource [${dp_props_path}] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:181)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:69)
+	... 31 more
+2013-04-17 14:51:38,355 INFO [com.softarch.integrationTest.runtime.webserver.AbstractWebServerTestManager] - <Tomcat Embedded-Server stopped!>
+2013-04-17 14:52:06,488 INFO [com.softarch.integrationTest.runtime.webserver.AbstractWebServerTestManager] - <Tomcat Embedded-Server stopped!>
